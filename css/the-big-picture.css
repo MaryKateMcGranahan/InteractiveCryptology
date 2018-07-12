@@ -6,7 +6,11 @@
 
 body {
 	text-align: center;
-  
+    font-size:14pt;
+}
+p{
+    margin-left: 75px;
+    margin-right: 75px;
 }
 h2{
 	font-family: "Lucida Console";
@@ -18,14 +22,21 @@ h2{
 task{
 	font-family: "Lucida Console";
 	color: green;
-	font-size: 10pt;
+	font-size: 14pt;
 	text-align: center;
+    margin-left: 75px;
+    margin-right: 75px;
 }
 h3{
 	font-family: "Times New Roman";
 	color: white;
 	font-size: 40pt;
 	text-align:center;
+    text-shadow:
+    -1px -1px 0 #000,
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+    1px 1px 0 #000;  
 
 }
 table{
@@ -68,7 +79,7 @@ display:block;
   background-image: url(whiteBox..jpg);
   background-size: 150px;
   width: 300px;
-  height: 300px;
+  height: 500px;
   border: 2px solid;
     background-color: white;
     background-position: center
