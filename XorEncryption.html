@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>An Interactive History of Cryptography</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="css/the-big-picture.css" rel="stylesheet">
+
+  </head>
+
+  <body>
+
+
+    <!-- Page Content -->
+    <section>
+      <!-- Page Content -->
+    <section>
+        <div class="mainTitle">
+            <h3 style="background-image: url('binary.jpg')">Logic Gates and Binary</h3>
+        </div>
+    </section>
+
+      <div class= "body">
+            <p>We are about to step into the world of Modern Cryptology. But first, it is neccesary to undertsand Xor Encryption and logic gates.<br>
+                Xor was an operation patented in 1919 for use in the Vernam cipher, which combines the binary of plaintext with teh binary bits of a key.<br>
+          Xor is a type of logic gate, which means it returns  true or false, with 1 being true and 0 being false. Other logic gates include and and or, the pattern of these gates is displayed in the chart below (and *, or +, and xor^).<br> </p>
+                 <img src="XorTable.png" class="center" alt="XorTable" height="400pt" width="400pt">
+     
+      <div class= "challenge">
+            <task>Practice your Xor, go digit by digit and xor these binary numbers together: 101^010:
+                <form>Answer:
+            <input type='text' id='answer' placeholder='Enter Binary'>
+            <br>
+            </form>
+            <button id='xor'>Submit</button>
+                 </task>
+      </div>
+          </div>
+            <p>In Xor encryption, a string of characters is converted to their binary value using an ascii table. Every letter and symbol in language has a number equivalent. These numbers are called ascii. They are shown on the ascii table below:<br>
+                <br>
+                <img src="asciifull.jpg" alt="ascii" height="200pt" width="200pt" class="center"><br>
+                <br>
+                The table below shows the decimal value, which we can use to get the binary value. Decimal numbers are base 10, they are what we are taught to count in, there are 10 basic numbers:0, 1, 2, 3...9. Binary numbers are in base 2, so they only have 1s and 0s. Each binary number has 8 bits (so 8 spots for a one or a zero) <br>
+                We are going to convert 30 from decimal to binary to show you how it is done.<br>
+                <img src="BinaryExample.jpg" alt="ascii" height="450pt" width="200pt" class="center"><br>
+                
+        </p>
+            
+    
+      <div class= "challenge">
+            <task>Convert 20 into binary:
+                <form>Answer:
+            <input type='text' id='answer' placeholder='Enter Binary'>
+            <br>
+            </form>
+            <button id='binary'>Submit</button>
+                 </task>
+      </div>
+     <p align="right">Click to move on!</p> <p align="left">Click to go back!</p>
+        <div>
+        <a href="Xor.html"><img src="3rdArrow.jpg" style="width:150px; height:70px;" class="right" title="arrow" alt="backArrow"></a>
+      </div>
+      <div>
+        <a href="vignere.html"><img src="2ndArrowBack.jpg" style="width:150px; height:70px;" class="left" title="arrow" alt="forwardArrow"></a>
+          </div>
+      
+    </section>
+    <!-- Bootstrap core JavaScript -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+
+  </body>
+
+</html>

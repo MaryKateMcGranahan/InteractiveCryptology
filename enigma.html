@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>An Interactive History of Cryptography</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="css/the-big-picture.css" rel="stylesheet">
+
+  </head>
+
+  <body>
+
+
+    <!-- Page Content -->
+    <section>
+      <!-- Page Content -->
+    <section>
+        <div class="mainTitle">
+            <h3>The Vignere Cipher</h3>
+        </div>
+    </section>
+    <img src="Vignere.jpg" alt="Vignere" height="600pt" width="400pt" class="center">
+
+      <div class= "body">
+            <p>If you know how a Caesar Cipher works. It is easy to break because, due to the fact it is a monoalphabetic cipher, there are only 25 possible answers. The Vignere Cipher is a monoalphabetic cipher and is more secure than a Caesar Cipher.<br>
+            Blaise de Vignere was a 16th century French cryptographer. He proposed this polyalphabetic cipher to King Henry III.<br>
+          Instead of using a number to shift the whole alphabet, the Vignere cipher requires a keyword.<br>
+          Each letter of the message is shifted by the corresponding letter of the keyword. Lets go through an example:<br>
+                <br>
+          <img src="VignereExample.jpg" class="center" alt="example" height="600pt" width="600pt"><br>
+          This Vignere square can be used to help encode and decode, instead of counting letters. <br>
+                Find the letter in the message on the right edge of the square and the letter of the key on the top, where the two rows intersect is the encrypted letter.<br>
+            </div>
+       <img src="VignereSquare.png" class="center" alt="VignereSquare" height="400pt" width="400pt"></p>
+    
+      <div class= "challenge">
+            <task>The key to this Vignere cipher is hidden in one of the images on this page. Find it and decode this message:
+            <b>a xjzrd qswii lwx yzxa llg rpizedvx</b>
+            <form>Answer:
+            <input type='text' id='answer' placeholder='Enter Message'>
+            <br>
+            </form>
+            <button id='submit'>Submit</button>
+          </task>
+        </div>
+        <div>
+            <p align="right">Click to move on!</p>
+        <a href="Xor.html"><img src="2ndArrow.jpg" style="width:150px; height:70px;" class="right" title="arrow" alt="backArrow"></a>
+            <p align="left">Click to go back!</p>
+        <a href="start.html"><img src="1stArrowBack.jpg" style="width:100px; height:70px;" class="left" title="arrow" alt="forwardArrow"></a>
+          </div>
+      
+    </section>
+    <!-- Bootstrap core JavaScript -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+  </body>
+
+</html>

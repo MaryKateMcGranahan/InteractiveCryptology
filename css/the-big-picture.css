@@ -1,0 +1,76 @@
+/*!
+ * Start Bootstrap - The Big Picture (https://startbootstrap.com/template-overviews/the-big-picture)
+ * Copyright 2013-2017 Start Bootstrap
+ * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap-the-big-picture/blob/master/LICENSE)
+ */
+
+body {
+	text-align: center;
+  
+}
+h2{
+	font-family: "Lucida Console";
+	color: white;
+	font-size: 60pt;
+	text-align: center;
+}
+
+task{
+	font-family: "Lucida Console";
+	color: green;
+	font-size: 10pt;
+	text-align: center;
+}
+h3{
+	font-family: "Times New Roman";
+	color: white;
+	font-size: 40pt;
+	text-align:center;
+
+}
+table{
+    font-family: "Lucida Console";
+	color: black;
+	font-size: 30pt;
+	text-align:center;
+}
+welcome{
+    font-family: "Lucida Console";
+	font-size: 30pt;
+	text-align:center;
+    color:aliceblue;
+    
+}
+
+slideTitle {
+	color: blue;
+	font-size: 30pt;
+	text-align: center;
+
+}
+.centerImage{
+text-align:center;
+display:block;
+}
+.right {
+	width:100%;
+   float:right;
+}
+.left {
+	width:100%;
+    float:left;
+}
+.center {
+    margin: auto;
+    width: 50%;
+}
+.whiteBackground {
+  background-image: url(whiteBox..jpg);
+  background-size: 150px;
+  width: 300px;
+  height: 300px;
+  border: 2px solid;
+    background-color: white;
+    background-position: center
+
+}
