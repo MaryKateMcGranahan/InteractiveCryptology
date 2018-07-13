@@ -44,12 +44,14 @@
            <div class= "challenge">
                <task>Convert <b>AB</b> into binary:<br>
             <form>Answer:
-            <input type='text' id='answer' placeholder='Enter Message'>
+            <input type='text' id='answer' placeholder='Enter Binary'>
             <br>
             </form>
 <button id='Hex'>Submit</button>
             </task>
       </div>
+          <br>
+          <br>
           <p><u>Hiding the Message in Binary</u></p>
           <p>In order to hide a message in binary, you need to match the binary of your message to the last binary digits of some pixels in the picture. You do this by adding 1, taking away 1, or leaving the last bit of the binary the same. For example, if I had the hex code of AC09 8A... and I wanted to hide the message hey, I would convert hey into its binary string based on its decimal value in the ascii chart= 01101000 01100101 01111001. I would then convert the first hex pixel, AD, into binary= 10101101. The first bit of the string we are hiding is 0, the last bit of the pixel we are starting at is 1, so we change the 10101101 of AD into 10101100, making it AC. These minor changes to the pixels will not affect the actual image. It is also helpful to know the start index of the hidden message (the number of the first changed pixel), or else you could be searching through thousands of extra pixels. 
           </p>
