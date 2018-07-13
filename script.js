@@ -222,4 +222,68 @@ $(document).ready(function () {
         }
         
     });
+    $("#Hex").click(function () {
+        var answer = document.getElementById('answer').value;
+        var correct="10101011";
+        var result;
+        var i=0;
+        if (answer.length != correct.length) {
+        		result=false;
+            
+        } 
+        else{
+        
+				while(i<answer.length){
+    				if (answer.charAt(i)==correct.charAt(i)){
+            	result=true;
+              i++;
+            }
+            else{
+            	result=false;
+              break;
+            }
+            
+				}
+        }
+        if (result==true){
+        alert("good job!");
+        
+        }
+        else{
+        alert("Incorrect,try again!");
+        }
+        
+    });
+     $("#Pic").click(function () {
+        var answer = document.getElementById('answer2').value;
+        var correct="spy";
+        var result;
+        var i=0;
+        if (answer.length != correct.length) {
+        		result=false;
+            
+        } 
+        else{
+        
+				while(i<answer.length){
+    				if (answer.charAt(i)==correct.charAt(i)){
+            	result=true;
+              i++;
+            }
+            else{
+            	result=false;
+              break;
+            }
+            
+				}
+        }
+        if (result==true){
+        alert("good job!");
+        
+        }
+        else{
+        alert("Incorrect,try again!");
+        }
+        
+    });
 });

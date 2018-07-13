@@ -26,36 +26,66 @@
       <!-- Page Content -->
     <section>
         <div class="mainTitle">
-            <h3>Picture Break!</h3>
+            <h3 style="background-image: url('camera.jpg')">Challenge: Steganography</h3>
         </div>
     </section>
-    <img src="puppy1.jpg" alt="puppy1" height="150" width="300pt" class="left">
-    <img src="puppy2.jpg" alt="puppy2" height="150" width="300pt" class="center">
-    <img src="puppy3.jpg" alt="puppy3" height="150" width="300pt" class="right">
+    
 
       <div class= "body">
-            <p>Decoding the Vignere cipher was a lot of letters. Sending long strings of jumbled up letters is inconvient, and not very secure.<br>
-            Both the Caesar and Vignere cipher's can be solved by anyone who intercepts the message, without even having the key. There is only a certain number of combinations it can be.<br>
-            What if you could send messages using pictures instead?<br>
-            These adorable puppies are actually secret agents. Their pictures contain a message in their binary code.<br>
+        <p><u>History of Steganography</u></p>
+            <p>Not all secret messages have to be written out in jumbled up letters. Steganography is the art of hiding messages amongst non secret text or data. It began in ancient Greece in a couple of forms, one of them an ancient Greek named Demaratus came up with when wrote a message warning of a Spartan invasion on the wooden backing of a wax tablet and hid it by filling it with wax so the tablet looked blank. Today, images can hold messages in their digital code. Every pixel in a picture corresponds to a hexadecimal number. Here is a picture of a puppy next to its hexadecimal code:<br>
+             <img src="puppy1.jpg" alt="puppy" >
+             <img src="picText.jpg" alt="picText"><br>
+          </p>
+                
+                 <p><u>Hexadecimals</u></p>
+            <p>Hexadecimal numbers are base 16. We need to convert them into binary in order to read the secret message in them. As you may notice, hexadecimals have letters in them in addition to their numbers. Here is how hex counts: 0, 1, 2... 9, A=10, B=11, C=12, D=13, E=14, F=15. Each hexadecimal digit corresponds to four bits of binary, so you can convert each digit individually. Lets say we have the hex 1F. We would use the methods we learned on the last page to convert 1 into binary= 0001 and 15 into binary= 1111. So teh full conversion is 00011111.
+          </p>
+           <div class= "challenge">
+               <task>Convert <b>AB</b> into binary:<br>
+            <form>Answer:
+            <input type='text' id='answer' placeholder='Enter Message'>
             <br>
-            Every pixel in a picture corresponds to a hexadecimal number. The code behind the first puppy looks like this:
-             <img src="picText.jpg" alt="picText" height="300" width="300pt" class="right"><br>
-            Hexadecimal numbers are base 16. We usually count in base 10: 1, 2, 3... Binary is base 2, only 1's and 0's. These hexadecimal numbers can be converted to binary. The message is stored in the binary code. 
-
-
-
-      <div>
-      <div class= "challenge">
-            <task>
-            <b>hvfr oge wqiu vcnxb ajwjbiobjorrpbqpgxjgk enqayh</b>
+            </form>
+<button id='Hex'>Submit</button>
             </task>
       </div>
-       <img src="VignereSquare.png" class="center" alt="VignereSquare" height="400pt" width="400pt">
+          <p><u>Hiding the Message in Binary</u></p>
+          <p>In order to hide a message in binary, you need to match the binary of your message to the last binary digits of some pixels in the picture. You do this by adding 1, taking away 1, or leaving the last bit of the binary the same. For example, if I had the hex code of AC09 8A... and I wanted to hide the message hey, I would convert hey into its binary string based on its decimal value in the ascii chart= 01101000 01100101 01111001. I would then convert the first hex pixel, AD, into binary= 10101101. The first bit of the string we are hiding is 0, the last bit of the pixel we are starting at is 1, so we change the 10101101 of AD into 10101100, making it AC. These minor changes to the pixels will not affect the actual image. It is also helpful to know the start index of the hidden message (the number of the first changed pixel), or else you could be searching through thousands of extra pixels. 
+          </p>
+          <div class= "challenge">
+               <task>Challenge: Save this image to your computer and open it in a text editor (like sublime). You should see the hexadecimal code (you may need to save it as a txt file). There is a message hidden starting at pixel 20 (remember a pixel is every 2 binary characters). See if you can use the binary to decode it. <br>
+                 <img src="puppy3.jpg" alt="puppy"><br>
+                   <button type="submit" onclick="window.open('puppy3.bmp')">Download!</button>
+                   <br>
+            <form>Answer:
+            <input type='text' id='answer2' placeholder='Enter Message'>
+            <br>
+            </form>
+<button id='Pic'>Submit</button>
+            </task>
+               <br>
+                   <br>
+      </div>
+        </div>
+         <div>
+        <a href="ModernCryptography.html"><img src="StegArrow.jpg" style="width:150px; height:70px;" class="right" title="arrow" alt="backArrow"></a>
+      </div>
+      <div>
+        <a href="BinaryLogic.html"><img src="3rdArrowBack.jpg" style="width:150px; height:70px;" class="left" title="arrow" alt="forwardArrow"></a>
+          </div>
+         <div>
+        <a href="index.html"><img src="HomeButton.jpg" style="width:100px; height:70px;" class="center" title="arrow" alt="backArrow"></a>
+          </div>
+
+
+
+      
     </section>
     <!-- Bootstrap core JavaScript -->
     <script src="vendor/jquery/jquery.min.js"></script>
     <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+       <script src="script.js"></script>
 
   </body>
 
